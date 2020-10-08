@@ -5,10 +5,29 @@
 The goal of this week's assignment is to make you familiar with assembler programming.
 
 ## Materials
-- Read chapters 2 and 4 of the NoBeard Report.
+- Chapters 2 and 4 of the NoBeard Report.
 - A text editor (take care that the line ending is set to UNIX format, i.e., line feed (LF) only).
-- nba to assemble your programs.
-- NbmGui to run and debug your programs.
+- `nba-`[`win`|`macos`] (depends on your platform) to assemble your programs.
+- `nbmgui-`[`win`|`macos`] (depends on your platform) to run and debug your programs.
+
+## Example
+Lets assume a NoBeard assembler file `first_test.na`. To assemble and run the program the following steps have to be done:
+
+1. Assemble the program to translate the NoBeard assembler file into a NoBeard object (file extension `.no`) file
+1. Start the NoBeard machine
+1. Load the `.no` file into the machine and start it
+
+The commands are as follows:
+### On a Windows Machine
+```
+nba-win first_test.na // assemble
+nbmgui-win // start the machine
+```
+### On macos
+```
+nba-macos first_test.na // assemble
+nbmgui-macos // start the machine
+```
 
 ## Required Tasks
 1. Create a folder `Solutions` to your repository. Place all assembler files you create for the next tasks into this directory.
